@@ -1,0 +1,106 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+  margin: 0
+  padding: 0  
+
+body
+  background-color: $white
+  font-size: $font-size
+  font-family: $default-font
+  width: 100%
+  min-height: 100%
+  color: $white
+  margin: 0 auto
+  overflow-x: hidden
+  -webkit-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+button
+  outline: none
+  cursor: pointer
+  border: transparent
+
+textarea,
+input
+  outline: none
+  border-radius: 0px !important
+  -webkit-appearance: none
+
+a,
+button
+  text-decoration: none
+  transition: .3s linear
+  outline: none  
+a,
+button
+  &:hover
+    transition: .3s linear
+
+.container
+  margin: 0 auto
+  max-width: 1296px
+  position: relative
+  padding: 0 15px
+
+.hidden
+  display: none
+
+.wrapper
+  margin: 0 auto
+  padding: 0
+
+.t-up
+  text-transform: uppercase
+
+.tc 
+  text-align: center
+
+.img_size
+  font-size: 0   
+
+.form-receive
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  &:after
+    content: ''
+    width: .1%
+    height: 100%
+    margin-left: -.1%
+    display: inline-block
+    vertical-align: middle
+
+.inside_btn
+  line-height: 1
+  padding: 3px 0 0 0
+
+.after
+  content: ''
+  position: absolute
+  display: block
+
+.no-scroll
+  overflow: hidden
+
+
+.input_style
+  color: $input-color
+  opacity: 1
+  font-family: $default-font
+  -webkit-appearance: none
+
+*::-webkit-input-placeholder
+    @extend .input_style
+
+*:-moz-placeholder
+    @extend .input_style
+
+*::-moz-placeholder
+    @extend .input_style
+
+*:-ms-input-placeholder
+    @extend .input_style
